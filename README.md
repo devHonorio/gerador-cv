@@ -1,4 +1,5 @@
 # Gerador de currículo
+Projeto simples da faculdade
 
 Esse é um gerador de currículo simples feito em php, javascript e tailwindcss.
 
