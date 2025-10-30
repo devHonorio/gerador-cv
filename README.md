@@ -6,8 +6,11 @@ Esse é um gerador de currículo simples feito em php, javascript e tailwindcss.
 ## Requisitos
 
  - php
+ - git
 
-### Como instalar
+## Instalando requisitos
+
+### php
 
 #### Windows
 
@@ -34,6 +37,24 @@ Abra o terminal e rode o comando:
 ```sh
 # Install PHP.
 sudo dnf install -y php
+```
+
+### git
+
+[link para baixar o git](https://git-scm.com/install/)
+
+## Clone o repositório
+
+Abra o terminal e rode o comando
+
+```sh
+git clone https://github.com/devHonorio/gerador-cv.git
+```
+
+Depois
+
+```sh
+cd gerador-cv
 ```
 
 ## Inicie o servidor
