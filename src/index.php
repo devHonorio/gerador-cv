@@ -23,7 +23,7 @@
       <div class="flex gap-5">
         <div class="flex gap-2 flex-col">
           <label class="text-sm font-bold text-black/70" for="idade">Idade</label>
-          <input id="idade" name="idade" type="number" typeof="numeric" required
+          <input id="idade" name="idade" type="date" required
             class="px-8 py-5 rounded-3xl font-semibold bg-white w-full">
         </div>
 

@@ -12,7 +12,6 @@ botaoImprimir.addEventListener('click', () => {
         botaoImprimir.classList.remove('hidden')
         botaoVoltar.classList.remove('hidden')
         folha.classList.add("shadow-2xl", "p-10")
-
     })
 })
 

@@ -1,8 +1,16 @@
 <?php
+$nascimento_form = $_POST['idade'];
+
+$nascimento = new DateTime($nascimento_form);
+
+$hoje = new DateTime();
+
+$diferenca = $nascimento->diff($hoje);
+
 
 $dados_pessoais = [
     'nome' => $_POST['nome'] ?? 'Não informado',
-    'idade' => $_POST['idade'] ?? 'Não informada',
+    'idade' => $diferenca->y ?? 'Não informada',
     'habilitacao' => $_POST['habilitacao'] ?? 'Nenhuma',
     'email' => $_POST['email'] ?? 'Não informado',
     'telefone' => $_POST['telefone'] ?? 'Não informado',
@@ -40,7 +48,6 @@ for ($i = 0; $i < $total_projetos; $i++) {
 </head>
 
 <body class="max-w-2xl mx-auto px-10 py-20">
-
     <div class="flex flex-col gap-10 font-semibold text-black/70 shadow-2xl rounded-xl p-10 folha">
         <section>
             <p class="text-4xl font-black mb-5 text-black"> <?php echo $dados_pessoais['nome']; ?></p>
@@ -57,7 +64,7 @@ for ($i = 0; $i < $total_projetos; $i++) {
             <?php if (!empty($projetos)): ?>
                 <?php foreach ($projetos as $projeto): ?>
                     <ul class="pl-5 mt-5">
-                        <h3 class="">- <?php echo $projeto['nome']; ?></h3>
+                        <h3>- <?php echo $projeto['nome']; ?></h3>
                         <ul class="pl-5">
                             <p>
                                 Link:

@@ -17,8 +17,6 @@ function adicionarNovoProjeto() {
 
 
     inputs.forEach(input => {
-
-
         input.value = '';
     });
 
@@ -27,10 +25,9 @@ function adicionarNovoProjeto() {
         novoProjeto.remove();
     });
 
-    console.log(novoProjeto)
     container.append(novoProjeto);
 
-    projetoIndex++;
+
 }
 
 
